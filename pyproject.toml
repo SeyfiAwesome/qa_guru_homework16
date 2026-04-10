@@ -1,0 +1,22 @@
+[project]
+name = "qa-guru-homework16"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Seyfullah Ismailov",email = "seyfullahismailly@gmail.com"}
+]
+requires-python = ">=3.13"
+dependencies = [
+    "selene (>=1.0.2,<2.0.0)",
+    "pytest (>=9.0.3,<10.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pylint (>=4.0.5,<5.0.0)"
+]
