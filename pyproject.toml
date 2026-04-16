@@ -3,14 +3,17 @@ name = "qa-guru-homework16"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Seyfullah Ismailov",email = "seyfullahismailly@gmail.com"}
+    { name = "Seyfullah Ismailov", email = "seyfullahismailly@gmail.com" }
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.10,<4.0"
 dependencies = [
-    "selene (>=1.0.2,<2.0.0)",
-    "pytest (>=9.0.3,<10.0.0)"
+    "selene>=2.0.0rc9,<3.0.0",
+    "pytest>=9.0.0,<10.0.0",
+    "selenium>=4.39.0,<4.40.0"
 ]
 
+[tool.poetry]
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
